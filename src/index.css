@@ -11,7 +11,6 @@ code {
     monospace;
 }
 .div{
-  /* margin-left: 40%; */
   display: flex;
 }
 .header-main{
@@ -29,7 +28,10 @@ code {
 }
 
 .div-main{
-  margin-top: 29px;
+  margin-top: 0px;
+}
+.div-row{
+  margin-top: 30px;
 }
 .generate{
   width: 150px;
@@ -48,7 +50,6 @@ code {
 }
 .div-output{
   display: flex;
-  /* margin-top: 10px; */
 }
 .box-output{
   background-color: white;
@@ -73,10 +74,11 @@ code {
   border-radius: 7px;
   font-size: 15px;
   padding: 10px 15px 5px 15px;
-  resize: none
+  resize: none;
+  
 }
 .encrypt{
-  width: 80px;
+  width: 100px;
   height: 50px;
   margin-left: 10px;
   border: 1px #d4e2f8 solid;
@@ -92,7 +94,7 @@ code {
   }
 }
 .decrypt{
-  width: 80px;
+  width: 100px;
   height: 50px;
   margin-left: 10px;
   border: 1px #d4e2f8 solid;
@@ -107,18 +109,23 @@ code {
     border: 2px #dedfe1 solid;
   }
 }
+.div-box-response{
+  margin-left: 10px;
+}
 .box-response{
   background-color: white;
   border: 2px #dedfe1 solid;
   border-radius: 15px;
+  font-size: 15px;
   width: 400px;
   height: 400px;
   padding: 0px 15px 15px 15px ;
   word-wrap: break-word;
+  overflow: auto;
 }
 .div-button{
-  margin-top: 53px;
+  margin: 205px 15px 0px 15px;
 }
 .div-a-button{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }

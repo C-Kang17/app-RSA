@@ -3,9 +3,9 @@ import Message from "./inputmessage";
 class Encrypt extends React.Component {
   render() {
     return (
-      <div>
+      <div className="div-row">
         <div className="">
-          <p>Your Encrypt</p>
+          <p className="header-main">Your Encrypt</p>
           <div className="box-response">
             <p className="text">
               {this.props.data}
