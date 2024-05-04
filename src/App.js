@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react"
-import Select from "./components/select";
-import Privatekey from "./components/outputleft";
-import Publickey from "./components/outputright";
-import axios from 'axios';
+import React from "react"
+import Main from "./components/main";
 import "./index.css";
   
-
 function App() {
-
+    
   return (
     <div>
-      <Select />
-      <div className="div-output">
-        <Privatekey/> <Publickey/>
-      </div>
+      <Main/>
     </div>
   );
 }
