@@ -13,6 +13,9 @@ class Message extends React.Component {
     handleChange = (event) => {
         this.setState({ inputMessage: event.target.value });
     };
+    handleEncryptedMessageChange = (encrypt) => {
+        this.setState({ encryptedMessage: encrypt });
+    };
     //call api encrypt
     encryptMessage = async () => {
         try {
@@ -61,7 +64,7 @@ class Message extends React.Component {
                     <button name="Decrypt" onClick={this.decryptMessage} className="decrypt">Decrypt</button>
                 </div>
             </div>
-            <Encrypt data={this.state.encryptedMessage}/>
+            <Encrypt onDataChange={this.handleEncryptedMessageChange} data={this.state.encryptedMessage}/>
             <Decrypt data={this.state.decryptedMessage}/>
         </div>
       </div>

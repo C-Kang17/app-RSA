@@ -12,6 +12,15 @@ class Main extends React.Component {
         privatekey:"",
         n:"",
     }
+    handlePrivateKeyChange = (privateKey) => {
+        this.setState({ privatekey: privateKey });
+    };
+    handlePublicKeyChange = (publicKey) => {
+        this.setState({ publickey: publicKey });
+    };
+    handleNChange = (n) => {
+        this.setState({ n: n });
+    };
     async generateKey() {
         try {
             const response = await axios.post('https://api-rsa.kiet.site/generate-key', {
@@ -47,9 +56,9 @@ class Main extends React.Component {
                         Generate key pair
                     </button>
                 </div>
-                <Privatekey data={this.state.privatekey}/>
-                <Publickey data={this.state.publickey}/>
-                <N data={this.state.n}/>
+                <Privatekey onDataChange={this.handlePrivateKeyChange} data={this.state.privatekey}/>
+                <Publickey onDataChange={this.handlePublicKeyChange} data={this.state.publickey}/>
+                <N onDataChange={this.handleNChange} data={this.state.n}/>
             </div>
             <div className="div">
                 <Message publickey={this.state.publickey} n={this.state.n} privatekey={this.state.privatekey} />

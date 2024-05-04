@@ -8,9 +8,9 @@ class Decrypt extends React.Component {
         <div className="div-box-response">
           <p className="header-main">Your Decrypt</p>
           <div className="box-response">
-            <p className="text">
+            <span>
               {this.props.data}
-            </p>
+            </span>
           </div>
         </div>
       </div>

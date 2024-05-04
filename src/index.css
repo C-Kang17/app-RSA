@@ -51,22 +51,26 @@ code {
 .div-output{
   display: flex;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button{ 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+}
 .box-output{
   background-color: white;
   border: 2px #dedfe1 solid;
   border-radius: 15px;
   width: 300px;
   height: 30px;
-  padding: 0px 15px 15px 15px ;
+  padding: 7px 15px 7px 15px ;
   word-wrap: break-word;
 }
 .div-box-output{
   margin-left: 50px;
 }
-.text{
-  padding-top: 10px;
-  margin: auto;
-}
+
 .input{
   width: 400px;
   height: 400px;
@@ -119,12 +123,14 @@ code {
   font-size: 15px;
   width: 400px;
   height: 400px;
-  padding: 0px 15px 15px 15px ;
+  padding: 10px 15px 5px 15px ;
   word-wrap: break-word;
+  resize: none;
   overflow: auto;
 }
 .div-button{
   margin: 205px 15px 0px 15px;
+  
 }
 .div-a-button{
   margin-bottom: 10px;
