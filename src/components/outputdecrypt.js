@@ -4,9 +4,9 @@ import select from "./main";
 class Decrypt extends React.Component {
   render() {
     return (
-      <div>
-        <div className="div-box-output">
-          <p>Your Decrypt</p>
+      <div className="div-row">
+        <div className="div-box-response">
+          <p className="header-main">Your Decrypt</p>
           <div className="box-response">
             <p className="text">
               {this.props.data}

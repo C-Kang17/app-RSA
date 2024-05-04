@@ -13,7 +13,7 @@ class Message extends React.Component {
     handleChange = (event) => {
         this.setState({ inputMessage: event.target.value });
     };
-
+    //call api encrypt
     encryptMessage = async () => {
         try {
             const response = await axios.post('https://api-rsa.kiet.site/encrypt', {
@@ -29,7 +29,7 @@ class Message extends React.Component {
             console.error('Error encrypting message:', error);
         }
     };
-
+    //call api decrypt
     decryptMessage = async () => {
         try {
             const response = await axios.post('https://api-rsa.kiet.site/decrypt', {
@@ -49,8 +49,8 @@ class Message extends React.Component {
     return (
       <div>
         <div className="div">
-            <div className="div-select">
-                <p className="header-select">Enter content</p>
+            <div className="div-row">
+                <p className="header-main">Enter content</p>
                 <textarea type='text' className='input' onChange={this.handleChange} value={this.state.inputMessage}></textarea>
             </div>
             <div className='div-button'>

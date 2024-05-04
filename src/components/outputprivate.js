@@ -6,7 +6,7 @@ class Privatekey extends React.Component {
     return (
       <div>
         <div className="div-box-output">
-          <p>Your private key</p>
+          <p className="header-main">Your private key</p>
           <div className="box-output">
             <p className="text">
               {this.props.data}
